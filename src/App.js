@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import 'aframe';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
@@ -16,7 +15,7 @@ function App() {
   return (
     <a-scene>
       <a-assets>
-        <img id= "sky" src={sky} />
+        <img id= "sky" src={sky} alt="Girl in a jacket"/>
       </a-assets>
 
       <a-sky
