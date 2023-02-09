@@ -1,3 +1,4 @@
+import logo from './logo.svg';
 import './App.css';
 import 'aframe';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
@@ -13,9 +14,9 @@ function App() {
   })
 
   return (
-    <a-scene>
+    <a-scene vr-mode-ui="enabled: true">
       <a-assets>
-        <img id= "sky" src={sky} alt="Girl in a jacket"/>
+        <img id= "sky" src={sky} />
       </a-assets>
 
       <a-sky
